@@ -1,6 +1,6 @@
 # vue3Tooltip Component for vue3 handling tooltips with descriptions of elements.
 
-In the component configuration, you can set:
+In the component configuration, you can set:<br>
 ```js
 // configuration tooltip
 const config = {
@@ -8,19 +8,19 @@ const config = {
     event: 'mousemove' // Event on which the tooltip is triggered.
 };
 ```
-which element attribute should be treated as the content/code to be placed in the tooltip.
--- title
--- description
--- any element attribute
+which element attribute should be treated as the content/code to be placed in the tooltip.<br>
+-- title<br>
+-- description<br>
+-- any element attribute<br>
 
-which event should the component react to:
--- mouseenter - the tooltip generates once and remains in place; upon leaving the element, the tooltip disappears.
--- mousemove - the tooltip follows the mouse cursor; upon leaving the element, the tooltip disappears.
--- other events, not tested but should work correctly.
+which event should the component react to:<br>
+-- mouseenter - the tooltip generates once and remains in place; upon leaving the element, the tooltip disappears.<br>
+-- mousemove - the tooltip follows the mouse cursor; upon leaving the element, the tooltip disappears.<br>
+-- other events, not tested but should work correctly.<br><br>
 
-In the tooltip, you can apply simple HTML, as well as add images, build a table in the tooltip (properly formatting the title attribute content).
+In the tooltip, you can apply simple HTML, as well as add images, build a table in the tooltip (properly formatting the title attribute content).<br>
 
-Example:
+Example:<br>
 
 ```vue
 <template>
@@ -42,10 +42,10 @@ export default {
 
 Introducing such code will display such a tooltip:<br>
 ![basic usage](./images/image.png)
+<br><br>
+This tooltip follows the mouse cursor, dynamically positions itself on the screen, and if it doesn't fit at the top, it will appear below the element.<br>
 
-This tooltip follows the mouse cursor, dynamically positions itself on the screen, and if it doesn't fit at the top, it will appear below the element.
+For tooltips, you can freely apply any styles.<br><br>
 
-For tooltips, you can freely apply any styles.
-
-I hope this little component will be useful to someone :)
-I myself searched for and installed many others, but they were not satisfactory for me - hence the need to create something like this.
+I hope this little component will be useful to someone :)<br>
+I myself searched for and installed many others, but they were not satisfactory for me - hence the need to create something like this.<br><br>
