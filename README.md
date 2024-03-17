@@ -23,3 +23,4 @@ export default {
 ```
 
 Wprowadzenie takiego kodu wyświetli nam taki tooltip:
+![file](vue3Tooltip/main/image.png)
