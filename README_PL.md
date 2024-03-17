@@ -1,7 +1,13 @@
 # Komponent vue3Tooltip dla vue3 obsługujący dymki (tooltipy) z opisem danego elementu.
 
 W konfiguracji komponentu można ustawić:
-![basic usage](./images/config_image.png)
+```js
+// configuration tooltip
+const config = {
+    tooltipAttribute: 'title', // Attribute used for displaying text in the tooltip.
+    event: 'mousemove' // Event on which the tooltip is triggered.
+};
+```
 - jaki atrybut elementu mamy traktować jako treść/kod do umieszczenia w tooltipie.
    -- title
    -- description
@@ -9,7 +15,8 @@ W konfiguracji komponentu można ustawić:
   
 - na jaki event ma reagować komponent:  
   -- mouseenter- dymek wygeneruje się raz i pozostanie na swoim miejscu, po opuszczeniu elementu dymek zniknie
-  -- mousemove- dymek będzie podążał za kurorem myszki, po opuszczeniu elementu dymek zniknie 
+  -- mousemove- dymek będzie podążał za kurorem myszki, po opuszczeniu elementu dymek zniknie
+  -- inne eventy, nie testowane ale powinny zadziałać poprawnie 
 
 W dymku można zastosować prosty html, ale i dodać zdjęcie, zbudować tabelę w dymku (odpowiednio formatując treść atrybutu title).
 
